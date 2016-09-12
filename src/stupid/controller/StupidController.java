@@ -25,6 +25,19 @@ public class StupidController
 		System.out.println("How was your day?");
 		String input = inputReader.nextLine();
 		System.out.println("Oh, you said: " + input + ", I hate you.");
+		
+		System.out.println("My next question is this: what is the best type of food");
+		String foodInput = inputReader.next();
+		System.out.println("Ok, you typed this: " + foodInput);
+		
+		System.out.println("What is the answer to life, the universe, and everything?");
+		Integer everythingInput = inputReader.nextInt();
+		System.out.println(everythingInput + "? shouldn't it be 6*7?");
+		
+		String responseInput = inputReader.next();
+		System.out.println(responseInput + "? Clearly I am right!");
+		
+		
 	}
 	
 }
