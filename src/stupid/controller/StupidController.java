@@ -6,11 +6,13 @@ public class StupidController
 {
 	private String myName; //Data Members
 	private Scanner inputReader;
+	private String itsName;
 
 	public StupidController() // constructor = public name of class
 	{
 		myName = "Spatula";
 		inputReader = new Scanner(System.in);
+		itsName = "Ted";
 	}
 
 	public void start()
@@ -31,13 +33,25 @@ public class StupidController
 		System.out.println("Ok, you typed this: " + foodInput);
 		
 		System.out.println("What is the answer to life, the universe, and everything?");
-		Integer everythingInput = inputReader.nextInt();
+		int everythingInput = inputReader.nextInt();
 		System.out.println(everythingInput + "? shouldn't it be 6*7?");
 		
 		String responseInput = inputReader.next();
 		System.out.println(responseInput + "? Clearly I am right!");
+		inputReader.nextLine();
 		
+		System.out.println("What is my name?");
+		String itsNameInput = inputReader.nextLine();
+		if(itsNameInput.equalsIgnoreCase ("Tedd")) 
+		{
+			System.out.println("Hey you remembered that my name is " + itsNameInput + "!");
+		}
+		else
+		{
+			System.out.println("You can't even remember my name! I hate you!");
+		}
 		
+			
 	}
 	
 }
