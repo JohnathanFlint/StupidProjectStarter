@@ -67,7 +67,7 @@ public class StupidController
 			System.out.println("Why should I trust you you're a horrible person!");
 			
 			String trustInput = inputReader.nextLine();
-			System.out.input
+			System.out.println("I still won't trust you.");
 		}
 			//for(int counter = 0;counter<50;counter++){} 
 		
